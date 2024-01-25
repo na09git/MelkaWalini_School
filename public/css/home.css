@@ -1,0 +1,70 @@
+#div1 {
+    position: relative;
+}
+
+#div2 {
+    position: relative;
+    padding-top: 60px;
+}
+
+#div3 {
+    position: relative;
+    padding-top: 10px;
+}
+
+#div4 {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#div5 {
+    position: relative;
+    padding-top: 30px;
+
+}
+
+#div6 {
+    position: relative;
+    padding-top: 20px;
+}
+
+#div7 {
+    position: relative;
+    padding-top: 20px;
+}
+
+
+/*#div9  is at the bottom of the code */
+
+#div9 {
+    position: relative;
+    margin-top: 100px;
+    height: auto;
+}
+
+#div10 {
+    position: relative;
+    padding-top: 30px;
+}
+
+#div11 {
+    position: relative;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    #div8 {
+        position: relative;
+        padding-top: 70px;
+        padding-bottom: 450px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    #div8 {
+        position: relative;
+        padding-top: 70px;
+        padding-bottom: 910px;
+    }
+}

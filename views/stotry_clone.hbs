@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 35%;
+        }
+
+        .friend-requests {
+            list-style: none;
+            padding: 0;
+        }
+
+        .friend-requests li {
+            margin-bottom: 10px;
+        }
+
+        .posts {
+            width: 60%;
+        }
+
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .actions button {
+            margin-right: 10px;
+        }
+    </style>
+
+    <header>
+        <h1>Facebook</h1>
+    </header>
+
+    <section class="content">
+        <aside class="sidebar">
+            <h2>Friend Requests</h2>
+            <ul class="friend-requests">
+                <li>User 1</li>
+                <li>User 2</li>
+                <!-- Add more friend requests here -->
+            </ul>
+        </aside>
+
+        <main class="posts">
+            <div class="post">
+                <p class="user">User Name</p>
+                <p class="post-content">Post content goes here...</p>
+                <div class="actions">
+                    <button class="like">Like</button>
+                    <button class="comment">Comment</button>
+                </div>
+            </div>
+            <!-- Add more posts here -->
+        </main>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

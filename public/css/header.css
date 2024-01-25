@@ -1,0 +1,133 @@
+.jumj_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+}
+
+/* .sub-menu-link img {
+    width: 40px;
+    background:#e5e5e5;
+    border-radius:50%;
+    padding:8px;
+    margin-right:15px;
+} */
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+.container-fluid {
+    position: sticky;
+    z-index: 99;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.no {
+    list-style-type: none;
+    padding-left: 6px;
+}
+
+.loginbtn {
+    background-color: #fff;
+    padding-right: 3px;
+    padding: 7px 17px;
+    border-radius: 20px;
+    color: #101C32;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 24, 24);
+}
+
+a {
+    text-decoration: none;
+}
+
+.loginbtn:hover {
+    color: #fff;
+    background: rgb(236, 56, 56);
+    transition: 0.3s ease;
+}
