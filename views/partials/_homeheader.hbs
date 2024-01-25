@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melka Walini School</title>
+    <link rel="icon" href="/images/melka16x16.png" type="image/png">
 
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -34,7 +35,7 @@
                 <ul class=" me-auto mb-2">
                     <li>
                         <a class="navbar" href="/">
-                            <img class="jumj_image" src="/images/melka50x50.png">
+                            <img class="jumj_image" src="/images/favicon_io/melka50x50.png">
                         </a>
                     </li>
                 </ul>
@@ -80,6 +81,15 @@
                             </span>
                         </a>
                     </li>
+                    <!-- vission-and-mission -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/vission-and-mission" style="padding: 5px; text-decoration:none;">
+                            <span class="text-success bg-light p-1 rounded">
+                                <i class="fas fa-newspaper me-1"></i>
+                                vission-and-mission
+                            </span>
+                        </a>
+                    </li>
 
                 </ul>
 
@@ -88,24 +98,6 @@
                     <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
                 </form>
 
-                {{!-------- if -------}}
-                {{!-------- if -------}}
-                {{!-------- if -------}}
-                {{!-- Debug statement --}}
-                <!-- Check if the user is logged in -->
-                <!-- Debug: Print user object -->
-                {{#if user}}
-                <!-- Display user profile image and username -->
-                <div class="user-profile">
-                    <img src="{{user.image}}" alt="Profile Image">
-                    <span>Welcome, {{user.displayName}} ^</span>
-                </div>
-                <!-- Add a logout link or button if needed -->
-                <a href="/auth/logout">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </a>
-                {{else}}
-                <!-- Add login or register links if the user is not logged in -->
                 <a href="./login" class="nav-link">
                     <button class="btn loginbtn rounded-pill"
                         onclick="document.getElementById('login-form').style.display='block'"
@@ -115,14 +107,6 @@
                         <i class="fas fa-sign-in-alt"></i>Login
                     </button>
                 </a>
-                {{/if}}
-                {{!-------- if -------}}
-                {{!-------- if -------}}
-                {{!-------- if -------}}
-
-
-
-                {{!-------- if -------}}
 
             </div>
         </div>

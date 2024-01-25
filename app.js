@@ -16,7 +16,6 @@ const app = express()
 const { ensureAdmin } = require('./middleware/auth');
 
 
-
 // Load config
 dotenv.config({ path: './config/config.env' })
 
@@ -78,6 +77,7 @@ app.set('view engine', '.hbs')
 // ...
 // home render
 app.get('/', function (req, res) {
+  let user = req.user
   console.log('User:', req.user);
 
   res.render('home', { layout: false, user: req.user });

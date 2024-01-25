@@ -90,23 +90,17 @@ router.get('/', async (req, res) => {
 
 // @desc    Show single story
 // @route   GET /story/:id
-router.get('/:id', ensureAuth, async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     let story = await Story.findById(req.params.id)
       .populate('user')
       .lean()
 
-    if (!story) {
-      return res.render('error/404')
-    }
 
-    if (story.user._id != req.user.id) {
-      res.render('error/404')
-    } else {
-      res.render('story/show', {
-        story,
-      })
-    }
+    res.render('story/show', {
+      story,
+    })
+
     console.log("You can now see the story details");
   } catch (err) {
     console.error(err)
@@ -219,7 +213,6 @@ router.delete('/:id', ensureAuth, async (req, res) => {
     return res.render('error/500');
   }
 });
-
 
 
 

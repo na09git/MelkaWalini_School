@@ -34,12 +34,15 @@
     padding-top: 20px;
 }
 
-
-/*#div9  is at the bottom of the code */
+#div8 {
+    position: relative;
+    margin-top: 30px;
+    height: auto;
+}
 
 #div9 {
     position: relative;
-    margin-top: 100px;
+    margin-top: 30px;
     height: auto;
 }
 
@@ -51,20 +54,4 @@
 #div11 {
     position: relative;
     padding-top: 10px;
-}
-
-@media screen and (min-width: 700px) {
-    #div8 {
-        position: relative;
-        padding-top: 70px;
-        padding-bottom: 450px;
-    }
-}
-
-@media screen and (max-width: 699px) {
-    #div8 {
-        position: relative;
-        padding-top: 70px;
-        padding-bottom: 910px;
-    }
 }

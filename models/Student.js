@@ -8,18 +8,14 @@ const StudentSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        required: true,
         trim: true,
     },
     phone: {
         type: String,
-        required: true,
-
     },
     grade: {
         type: String,
         default: '1',
-        required: true,
         enum: ['kg-1', 'kg-2', 'kg-3', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
     },
     status: {

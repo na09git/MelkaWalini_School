@@ -9,7 +9,6 @@ const WorkerSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        required: true,
         trim: true,
     },
     phone: {
@@ -22,8 +21,6 @@ const WorkerSchema = new mongoose.Schema({
     },
     salary: {
         type: String,
-        required: true,
-
     },
     gender: {
         type: String,
