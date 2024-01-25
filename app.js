@@ -77,10 +77,9 @@ app.set('view engine', '.hbs')
 // ...
 // home render
 app.get('/', function (req, res) {
-  let user = req.user
-  console.log('User:', req.user);
 
-  res.render('home', { layout: false, user: req.user });
+
+  res.render('home', { layout: false });
   console.log("You are in home+++++++++ Page !")
 });
 // homeadmin render
