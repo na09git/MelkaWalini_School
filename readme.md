@@ -1,9 +1,5 @@
-??? Lefgt Works 
-
-1. Image in events
-2. add CRUD page
-3. News for jumj update
-4. login sign up manual
+LWork 
+1. login sign up manual
 
 
 # Share_Event
