@@ -178,17 +178,31 @@ router.get('/vission-and-mission', (req, res) => {
 })
 
 
-// @desc    stotry_clone
-// @route   GET /stotry_clone
-router.get('/stotry_clone', (req, res) => {
+
+// @desc    privacy
+// @route   GET /privacy
+router.get('/privacy', async (req, res) => {
   try {
-    res.render('stotry_clone')
+    res.render('privacy')
+    console.log("You are in privacy Page !");
   } catch (err) {
     console.error(err)
     res.render('error/500')
   }
 })
 
+
+// @desc    terms
+// @route   GET /terms
+router.get('/terms', async (req, res) => {
+  try {
+    res.render('terms')
+    console.log("You are in terms Page !");
+  } catch (err) {
+    console.error(err)
+    res.render('error/500')
+  }
+})
 
 
 module.exports = router
