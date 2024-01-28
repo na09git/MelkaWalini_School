@@ -14,6 +14,7 @@ const handlebarsHelpers = require('handlebars-helpers')();
 const base64Helper = (data) => new handlebars.SafeString(data.toString('base64'));
 const app = express()
 const { ensureAdmin } = require('./middleware/auth');
+const { uuid } = require('uuidv4');
 
 
 // Load config
@@ -80,7 +81,7 @@ app.get('/', function (req, res) {
 
 
   res.render('home', { layout: false });
-  console.log("You are in home+++++++++ Page !")
+  console.log("You are in home+++++++ Page !")
 });
 // homeadmin render
 app.get('/', function (req, res) {

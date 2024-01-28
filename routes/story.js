@@ -239,7 +239,7 @@ router.get('/user/:userId', ensureAuth, async (req, res) => {
 //@route GET /story/search/:query
 router.get('/search/:query', async (req, res) => {
   try {
-    const story = await Story.find({ name: new RegExp(req.query.query, 'i') })
+    const story = await Story.find({ title: new RegExp(req.query.query, 'i') })
       .populate('user')
       .sort({ createdAt: 'desc' })
       .lean();
