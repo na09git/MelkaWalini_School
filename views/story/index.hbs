@@ -2,9 +2,6 @@
 <div class="w-100" style="position: fixed; z-index: 100; ">
     {{> _storyheader}}
 </div>
-<div>
-    {{> _add_btn}}
-</div>
 
 <!-- Back-to-Top Styles -->
 <style>
@@ -12,8 +9,8 @@
     #btn-back-to-top {
         z-index: 1;
         position: fixed;
-        bottom: 40px;
-        right: 40px;
+        bottom: 20px;
+        right: 20px;
         width: 60px;
         height: 50px;
         border: none;
@@ -23,8 +20,8 @@
     @media only screen and (max-width: 700px) {
 
         #container_1 {
-            padding-left: 20px;
-            padding-right: 50px;
+            padding-left: 5px;
+            padding-right: 20px;
         }
     }
 
@@ -46,7 +43,7 @@
             </h3>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12" style="padding-left: 20px;">
             <form id="search-site" action='/story/search/:query' method='get' class="mb-4">
                 <div class="input-group" style="padding-top: 10px;">
                     <span class="input-group-text"><i class="fas fa-search fa-lg"></i></span>

@@ -1,7 +1,26 @@
 <div class="w-100" style=" z-index: 100; position:fixed;">
     {{> _storyheader}}
 </div>
-<div class="container row " style="padding-top: 6%; padding-right:10%; padding-left:310px;">
+
+<style>
+    @media only screen and (max-width: 700px) {
+
+        #container_edit {
+            padding-left: 20px;
+            padding-right: 40px;
+        }
+    }
+
+    @media only screen and (min-width: 701px) {
+
+        #container_edit {
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+    }
+</style>
+
+<div class="container row " id="container_edit" style="padding-top: 90px; width:auto;">
     <div class=" bg-info bg-opacity-10 border border-info border-start-0 rounded-end"
         style="padding-top: 20px; padding-right:10%; padding-left:10%;">
 
@@ -26,8 +45,8 @@
                 <div class="row mb-2">
                     <label for="body" class="col-sm-6 col-form-label">Tell Us your story :</label>
                 </div>
-                <div class="row mb-2">
-                    <div class="col-sm-10">
+                <div class="row mb-2 w-100">
+                    <div>
                         <textarea class="form-control" id="body" name="body">{{story.body}}</textarea>
                     </div>
                 </div>

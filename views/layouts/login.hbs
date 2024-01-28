@@ -17,7 +17,28 @@
 </head>
 
 <body>
-    <div class="container login-container w-50 p-4" style="margin-top:50px ;">
+    <style>
+        @media only screen and (max-width: 700px) {
+
+            .login-container {
+                    {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 701px) {
+
+            .login-container {
+                    {
+                    padding-left: 450px;
+                    padding-right: 450px;
+                }
+            }
+        }
+    </style>
+    <div class="container login-container  p-4" id="container_login" style="margin-top:50px ;">
         <div class="card">
             <div class="card-content">
                 {{{body}}}
