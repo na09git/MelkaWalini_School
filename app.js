@@ -168,6 +168,7 @@ app.use('/worker', require('./routes/worker'));
 app.use('/problem', require('./routes/problem'));
 app.use('/contact', require('./routes/contact'));
 app.use('/privacy', require('./routes/privacy'));
+app.use('/terms', require('./routes/terms'));
 
 
 const PORT = process.env.PORT || 3000
